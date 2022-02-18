@@ -14,7 +14,7 @@ public class MDB {
         public MDB() {
            // conexion = new Conexion("com.mysql.jdbc.Driver",  "jdbc:mysql://localhost/bdcostos", "root","administrador");//CAMBIAR BDCOSTOS POR EL NOMBRE DE SU BD
 	
-        conexion = new Conexion("com.mysql.cj.jdbc.Driver", "jdbc:mysql://127.0.0.1:3306/bddatos","root","MAJISTERIO123");//ESTA CADENA LARGA SE USA PARA MAC Y PARA ALGUNAS INSTALACIONES RECIENTES DE MYSQL
+        conexion = new Conexion("com.mysql.cj.jdbc.Driver", "jdbc:mysql://sql5.freesqldatabase.com/sql5473339","sql5473339","f8phRaHEN6");//ESTA CADENA LARGA SE USA PARA MAC Y PARA ALGUNAS INSTALACIONES RECIENTES DE MYSQL
 	
         }
 
@@ -43,7 +43,7 @@ public class MDB {
 				dataSet.close();
 				executer.close();
 			}
-			catch (SQLException e) {
+                                catch (SQLException e) {
 				System.out.print(e.toString());
 			}
 		}
