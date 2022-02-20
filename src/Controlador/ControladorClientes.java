@@ -46,6 +46,8 @@ public void actionPerformed(ActionEvent e) {
 }
 public void iniciar(){
 _view.setTitle("MVC_Visual");
+
+System.out.println("Emma");
 }
 public void limpiar(){
 
