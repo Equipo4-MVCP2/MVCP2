@@ -42,6 +42,7 @@ public void actionPerformed(ActionEvent e) {
         //agregar otros botones si se necesitan implementar
 }
       System.out.println("holiiiis");
+      System.out.println("Probando");
 }
 public void iniciar(){
 _view.setTitle("MVC_Visual");
