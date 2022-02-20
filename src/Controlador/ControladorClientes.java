@@ -43,6 +43,7 @@ public void actionPerformed(ActionEvent e) {
 }
       System.out.println("holiiiis");
       System.out.println("Probando");
+      System.out.println("Luis Antonio");
 }
 public void iniciar(){
 _view.setTitle("MVC_Visual");
