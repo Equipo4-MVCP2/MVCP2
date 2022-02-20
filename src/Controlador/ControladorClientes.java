@@ -43,7 +43,8 @@ public void actionPerformed(ActionEvent e) {
 }
        System.out.println("holiiiis");
        System.out.println("Hola mich");
-       System.out.println("Al chile todos me la pelan");
+       System.out.println("JoseLuis");
+       System.out.println("emma");
 }
 public void iniciar(){
 _view.setTitle("MVC_Visual");
