@@ -29,6 +29,9 @@ public class MVC_P2 {
         objController.iniciar();
         objVista.setVisible(true);
         
+        System.out.println("Ejemplo");
+        
+        
     }
     
 }

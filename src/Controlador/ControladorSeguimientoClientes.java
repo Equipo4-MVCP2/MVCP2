@@ -14,12 +14,12 @@ import Vista.FrmSeguimientoClientes;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 public class ControladorSeguimientoClientes implements ActionListener{
   private FrmSeguimientoClientes _view; //el formulario 
   private MDB _model;//el manejador de bases de datos
-
-    
+  
     public ControladorSeguimientoClientes(FrmSeguimientoClientes view, MDB model){
        this._model=model;
        this._view=view;
