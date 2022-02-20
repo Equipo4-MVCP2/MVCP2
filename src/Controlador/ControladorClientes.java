@@ -41,15 +41,16 @@ public void actionPerformed(ActionEvent e) {
         limpiar();//se limpian las cajas de texto
         //agregar otros botones si se necesitan implementar
 }
-      System.out.println("holiiiis");
-      System.out.println("Probando");
-      System.out.println("Luis Antonio");
-      System.out.println("jose Luis");
+      System.out.println("holiiiis");//michel
+      System.out.println("Probando");//fernando
+      System.out.println("Luis Antonio");//luis
+      System.out.println("Emma");//emanuel
+      System.out.println("jose Luis");//yo
 }
 public void iniciar(){
 _view.setTitle("MVC_Visual");
 
-System.out.println("Emma");
+
 }
 public void limpiar(){
 
