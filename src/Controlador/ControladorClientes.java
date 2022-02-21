@@ -46,6 +46,7 @@ public void actionPerformed(ActionEvent e) {
       System.out.println("Luis Antonio");//luis
       System.out.println("Emma");//emanuel
       System.out.println("jose Luis");//yo
+      System.out.println("Jesus Zahid Luna");//Zahid
 }
 public void iniciar(){
 _view.setTitle("MVC_Visual");
