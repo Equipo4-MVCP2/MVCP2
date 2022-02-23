@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vista;
+package prueba;
 
 /**
  *
@@ -27,17 +27,50 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblFechAcuerdo4 = new javax.swing.JLabel();
+        lblAcuerdo4 = new javax.swing.JLabel();
+        txtFechAcuerdo4 = new javax.swing.JTextField();
+        txtAcuerdoNum4 = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblFechAcuerdo4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblFechAcuerdo4.setText("Fecha de Acuerdo Num. 4 : ");
+
+        lblAcuerdo4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblAcuerdo4.setText("Acuerdo Num. 4 : ");
+
+        txtFechAcuerdo4.setText(" ");
+
+        txtAcuerdoNum4.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblFechAcuerdo4)
+                    .addComponent(lblAcuerdo4))
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtFechAcuerdo4, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE)
+                    .addComponent(txtAcuerdoNum4))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(569, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblFechAcuerdo4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtFechAcuerdo4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblAcuerdo4)
+                    .addComponent(txtAcuerdoNum4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(104, 104, 104))
         );
 
         pack();
@@ -69,6 +102,7 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(FrmSeguimientoClientes.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -79,5 +113,9 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JLabel lblAcuerdo4;
+    public javax.swing.JLabel lblFechAcuerdo4;
+    public javax.swing.JTextField txtAcuerdoNum4;
+    public javax.swing.JTextField txtFechAcuerdo4;
     // End of variables declaration//GEN-END:variables
 }

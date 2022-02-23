@@ -29,20 +29,20 @@ public class FrmClientes extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         txtemail = new javax.swing.JTextPane();
-        label1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblEmail = new javax.swing.JLabel();
+        lblTlfTrabajo = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         txttrabajo = new javax.swing.JTextPane();
-        jLabel4 = new javax.swing.JLabel();
+        lblFechCredito = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         txtfechcredit = new javax.swing.JTextPane();
-        jLabel6 = new javax.swing.JLabel();
+        lblValorCredito = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         txtvalorcredito = new javax.swing.JTextPane();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        lblTlfresidencia = new javax.swing.JLabel();
+        lblNumFactura = new javax.swing.JLabel();
+        lblTipoCartera = new javax.swing.JLabel();
+        lblNumCuotas = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
         txtresidencia = new javax.swing.JTextPane();
         jScrollPane6 = new javax.swing.JScrollPane();
@@ -51,32 +51,54 @@ public class FrmClientes extends javax.swing.JFrame {
         txttipocartera = new javax.swing.JTextPane();
         jScrollPane8 = new javax.swing.JScrollPane();
         txtnumcuotas = new javax.swing.JTextPane();
+        lblCedula = new javax.swing.JLabel();
+        txtResidencial = new javax.swing.JTextField();
+        lblExpedicion = new javax.swing.JLabel();
+        txtCiudad = new javax.swing.JTextField();
+        lblNombre = new javax.swing.JLabel();
+        txtDepartamento = new javax.swing.JTextField();
+        lblProfesion = new javax.swing.JLabel();
+        lblResidencial = new javax.swing.JLabel();
+        lblCiudad = new javax.swing.JLabel();
+        lblDepartamento = new javax.swing.JLabel();
+        txtCedula = new javax.swing.JTextField();
+        txtExpedicion = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtProfesion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jScrollPane1.setViewportView(txtemail);
 
-        label1.setText("E-Mail:");
+        lblEmail.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblEmail.setText("E-Mail:");
 
-        jLabel2.setText("Tel. Trabajo:");
+        lblTlfTrabajo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTlfTrabajo.setText("Tel. Trabajo:");
 
         jScrollPane2.setViewportView(txttrabajo);
 
-        jLabel4.setText("Fecha de Credito:");
+        lblFechCredito.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblFechCredito.setText("Fecha de Credito:");
 
         jScrollPane3.setViewportView(txtfechcredit);
 
-        jLabel6.setText("Valor Credito:");
+        lblValorCredito.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblValorCredito.setText("Valor Credito:");
 
         jScrollPane4.setViewportView(txtvalorcredito);
 
-        jLabel1.setText("Tel. Residencia:");
+        lblTlfresidencia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTlfresidencia.setText("Tel. Residencia:");
 
-        jLabel3.setText("Num. Factura:");
+        lblNumFactura.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblNumFactura.setText("Num. Factura:");
 
-        jLabel5.setText("Tipo Cartera:");
+        lblTipoCartera.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblTipoCartera.setText("Tipo Cartera:");
 
-        jLabel7.setText("Num. Cuotas:");
+        lblNumCuotas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblNumCuotas.setText("Num. Cuotas:");
 
         jScrollPane5.setViewportView(txtresidencia);
 
@@ -86,88 +108,155 @@ public class FrmClientes extends javax.swing.JFrame {
 
         jScrollPane8.setViewportView(txtnumcuotas);
 
+        lblCedula.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblCedula.setText("Cédula : ");
+
+        txtResidencial.setText(" ");
+
+        lblExpedicion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblExpedicion.setText("Lugar de Expedición : ");
+
+        txtCiudad.setText(" ");
+
+        lblNombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblNombre.setText("Nombre Completo : ");
+
+        txtDepartamento.setText(" ");
+
+        lblProfesion.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblProfesion.setText("Profesión : ");
+
+        lblResidencial.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblResidencial.setText("Dirección Residencial :");
+
+        lblCiudad.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblCiudad.setText("Ciudad : ");
+
+        lblDepartamento.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblDepartamento.setText("Departamento : ");
+
+        txtCedula.setText(" ");
+
+        txtExpedicion.setText(" ");
+
+        txtNombre.setText(" ");
+
+        txtProfesion.setText(" ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(30, 30, 30)
-                        .addComponent(jScrollPane4))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(label1)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNombre)
+                    .addComponent(lblCedula))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtCedula, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                    .addComponent(txtNombre))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblExpedicion)
+                    .addComponent(lblProfesion)
+                    .addComponent(lblCiudad)
+                    .addComponent(lblTlfTrabajo)
+                    .addComponent(lblFechCredito)
+                    .addComponent(lblValorCredito))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane1)
+                    .addComponent(txtExpedicion, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtProfesion, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
+                    .addComponent(txtCiudad)
+                    .addComponent(jScrollPane5)
+                    .addComponent(jScrollPane3)
+                    .addComponent(jScrollPane8))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
-                        .addGap(109, 109, 109))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel7))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblResidencial)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblDepartamento)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(lblTlfresidencia)
+                                    .addComponent(lblNumFactura)
+                                    .addComponent(lblTipoCartera))))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtResidencial, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
+                            .addComponent(txtDepartamento)
+                            .addComponent(jScrollPane2)
                             .addComponent(jScrollPane6)
-                            .addComponent(jScrollPane8))
-                        .addGap(108, 108, 108))))
+                            .addComponent(jScrollPane7))
+                        .addGap(112, 112, 112)
+                        .addComponent(lblEmail))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(271, 271, 271)
+                        .addComponent(lblNumCuotas)
+                        .addGap(39, 39, 39)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)))
+                .addGap(267, 267, 267))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(264, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(label1, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(27, 27, 27)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(jLabel3))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4)))))
-                    .addComponent(jLabel5))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel6)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblCedula)
+                                    .addComponent(txtCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblExpedicion, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtExpedicion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(41, 41, 41)
+                                .addComponent(lblNombre))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblProfesion)
+                                .addComponent(txtProfesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblResidencial)
+                            .addComponent(txtResidencial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCiudad)
+                            .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(lblDepartamento)
+                                .addComponent(txtDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lblEmail))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblTlfresidencia)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblTlfTrabajo)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(36, 36, 36)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblNumFactura)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblFechCredito)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblTipoCartera)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblValorCredito)))
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(59, 59, 59))
+                .addGap(57, 57, 57)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNumCuotas)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(198, Short.MAX_VALUE))
         );
 
         pack();
@@ -209,13 +298,6 @@ public class FrmClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -224,7 +306,28 @@ public class FrmClientes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JLabel label1;
+    public javax.swing.JLabel lblCedula;
+    public javax.swing.JLabel lblCiudad;
+    public javax.swing.JLabel lblDepartamento;
+    public javax.swing.JLabel lblEmail;
+    public javax.swing.JLabel lblExpedicion;
+    public javax.swing.JLabel lblFechCredito;
+    public javax.swing.JLabel lblNombre;
+    public javax.swing.JLabel lblNumCuotas;
+    public javax.swing.JLabel lblNumFactura;
+    public javax.swing.JLabel lblProfesion;
+    public javax.swing.JLabel lblResidencial;
+    public javax.swing.JLabel lblTipoCartera;
+    public javax.swing.JLabel lblTlfTrabajo;
+    public javax.swing.JLabel lblTlfresidencia;
+    public javax.swing.JLabel lblValorCredito;
+    public javax.swing.JTextField txtCedula;
+    public javax.swing.JTextField txtCiudad;
+    public javax.swing.JTextField txtDepartamento;
+    public javax.swing.JTextField txtExpedicion;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtProfesion;
+    public javax.swing.JTextField txtResidencial;
     public javax.swing.JTextPane txtemail;
     public javax.swing.JTextPane txtfechcredit;
     public javax.swing.JTextPane txtnumcuotas;
