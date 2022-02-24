@@ -23,7 +23,7 @@ public class ControladorSeguimientoClientes implements ActionListener{
     public ControladorSeguimientoClientes(FrmSeguimientoClientes view, MDB model){
        this._model=model;
        this._view=view;
-       this._view.cmdAltas.addActionListener(this);//se obtiene el control sobre el botón alta del formulario
+       this._view.cmdAlta.addActionListener(this);//se obtiene el control sobre el botón alta del formulario
        this._view.cmdEliminar.addActionListener(this);//se obtiene el control de botón eliminar
 }
 @Override
@@ -31,9 +31,9 @@ public class ControladorSeguimientoClientes implements ActionListener{
 public void actionPerformed(ActionEvent e) {
         String leyenda="";//esta variable servirá para atrapar los errores sql
 
-        if (e.getSource()==_view.cmdAltas){ //Si el botón presionado fue el de alta
+        if (e.getSource()==_view.cmdAlta){ //Si el botón presionado fue el de alta
             
-        leyenda=_model.registrarAlta("TbUsuarios"," null, ' " +_view.txtNombre.getText()+" ',' " +_view.txtApellidopaterno.getText() +" ', "+_view.txtContrasena.getText() );
+        leyenda=_model.registrarAlta("TbUsuarios"," null, ' " +_view.jTextField1.getText()+" ',' " +_view.jTextField10.getText() +" ', "+_view.jTextField11.getText()+" ', "+_view.jTextField12.getText()+" ', "+_view.jTextField13.getText()+" ', "+_view.jTextField14.getText()+" ', "+_view.jTextField15.getText()+" ', "+_view.jTextField16.getText()+" ', "+_view.jTextField17.getText()+" ', "+_view.jTextField2.getText()+" ', "+_view.jTextField3.getText()+" ', "+_view.jTextField4.getText()+" ', "+_view.jTextField5.getText()+" ', "+_view.jTextField6.getText()+" ', "+_view.jTextField7.getText()+" ', "+_view.jTextField8.getText()+" ', "+_view.jTextField9.getText()+" ', "+_view.txtAcuerdoNum4.getText()+" ', "+_view.txtDiasMora.getText()+" ', "+_view.txtFechAcuerdo4.getText()+" ', "+_view.txtFechaMora.getText()+" ', "+_view.txtInteresMora.getText()+" ', "+_view.txtNumFactura.getText()+" ', "+_view.txtTelResidencia.getText()+" ', "+_view.txtTelTrabajo.getText()+" ', "+_view.txtTipoCartera.getText()+" ', "+_view.txtValorMora.getText()+" ', "+_view.txtValorSeguro.getText()+" ', ");
         //Se puede usar una variable o el control, lo ideal es que se pudiera llamar una función de
        // validación aquí sobre los datos obteindos de las cajas de texto
         JOptionPane.showMessageDialog(null, leyenda);//Se manda mensaje con elresultado de la
@@ -47,6 +47,34 @@ _view.setTitle("MVC_Visual");
 }
 public void limpiar(){
 
-        
+      _view.jTextField1.setText(null);
+_view.jTextField2.setText(null);
+_view.jTextField3.setText(null);
+_view.jTextField4.setText(null);
+_view.jTextField5.setText(null);
+_view.jTextField6.setText(null);
+_view.jTextField7.setText(null);
+_view.jTextField8.setText(null);
+_view.jTextField8.setText(null);
+_view.jTextField9.setText(null);
+_view.jTextField10.setText(null);
+_view.jTextField11.setText(null);
+_view.jTextField12.setText(null);
+_view.jTextField13.setText(null);
+_view.jTextField14.setText(null);
+_view.jTextField15.setText(null);
+_view.jTextField16.setText(null);
+_view.jTextField17.setText(null);
+_view.txtAcuerdoNum4.setText(null);
+_view.txtDiasMora.setText(null);
+_view.txtFechAcuerdo4.setText(null);
+_view.txtFechaMora.setText(null);
+_view.txtInteresMora.setText(null);
+_view.txtNumFactura.setText(null);
+_view.txtTelResidencia.setText(null);
+_view.txtTelTrabajo.setText(null);
+_view.txtTipoCartera.setText(null);
+_view.txtValorMora.setText(null);
+_view.txtValorSeguro.setText(null);  
 }
 }

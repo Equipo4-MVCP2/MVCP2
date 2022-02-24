@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package apartado;
+package Vista;
 
 /**
  *
@@ -28,29 +28,29 @@ public class FrmClientes extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        txtemail = new javax.swing.JTextPane();
+        txtEmail = new javax.swing.JTextPane();
         lblEmail = new javax.swing.JLabel();
         lblTlfTrabajo = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        txttrabajo = new javax.swing.JTextPane();
+        txtTrabajo = new javax.swing.JTextPane();
         lblFechCredito = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        txtfechcredit = new javax.swing.JTextPane();
+        txtFechCredit = new javax.swing.JTextPane();
         lblValorCredito = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        txtvalorcredito = new javax.swing.JTextPane();
+        txtValorCredito = new javax.swing.JTextPane();
         lblTlfresidencia = new javax.swing.JLabel();
         lblNumFactura = new javax.swing.JLabel();
         lblTipoCartera = new javax.swing.JLabel();
         lblNumCuotas = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        txtresidencia = new javax.swing.JTextPane();
+        txtResidencia = new javax.swing.JTextPane();
         jScrollPane6 = new javax.swing.JScrollPane();
-        txtnumfactura = new javax.swing.JTextPane();
+        txtNumFactura = new javax.swing.JTextPane();
         jScrollPane7 = new javax.swing.JScrollPane();
-        txttipocartera = new javax.swing.JTextPane();
+        txtTipoCartera = new javax.swing.JTextPane();
         jScrollPane8 = new javax.swing.JScrollPane();
-        txtnumcuotas = new javax.swing.JTextPane();
+        txtNumCuotas = new javax.swing.JTextPane();
         lblCedula = new javax.swing.JLabel();
         txtResidencial = new javax.swing.JTextField();
         lblExpedicion = new javax.swing.JLabel();
@@ -65,10 +65,12 @@ public class FrmClientes extends javax.swing.JFrame {
         txtExpedicion = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
         txtProfesion = new javax.swing.JTextField();
+        cmdAlta = new javax.swing.JButton();
+        cmdEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jScrollPane1.setViewportView(txtemail);
+        jScrollPane1.setViewportView(txtEmail);
 
         lblEmail.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblEmail.setText("E-Mail:");
@@ -76,17 +78,17 @@ public class FrmClientes extends javax.swing.JFrame {
         lblTlfTrabajo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTlfTrabajo.setText("Tel. Trabajo:");
 
-        jScrollPane2.setViewportView(txttrabajo);
+        jScrollPane2.setViewportView(txtTrabajo);
 
         lblFechCredito.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblFechCredito.setText("Fecha de Credito:");
 
-        jScrollPane3.setViewportView(txtfechcredit);
+        jScrollPane3.setViewportView(txtFechCredit);
 
         lblValorCredito.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblValorCredito.setText("Valor Credito:");
 
-        jScrollPane4.setViewportView(txtvalorcredito);
+        jScrollPane4.setViewportView(txtValorCredito);
 
         lblTlfresidencia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblTlfresidencia.setText("Tel. Residencia:");
@@ -100,13 +102,13 @@ public class FrmClientes extends javax.swing.JFrame {
         lblNumCuotas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblNumCuotas.setText("Num. Cuotas:");
 
-        jScrollPane5.setViewportView(txtresidencia);
+        jScrollPane5.setViewportView(txtResidencia);
 
-        jScrollPane6.setViewportView(txtnumfactura);
+        jScrollPane6.setViewportView(txtNumFactura);
 
-        jScrollPane7.setViewportView(txttipocartera);
+        jScrollPane7.setViewportView(txtTipoCartera);
 
-        jScrollPane8.setViewportView(txtnumcuotas);
+        jScrollPane8.setViewportView(txtNumCuotas);
 
         lblCedula.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblCedula.setText("Cédula : ");
@@ -142,6 +144,10 @@ public class FrmClientes extends javax.swing.JFrame {
         txtNombre.setText(" ");
 
         txtProfesion.setText(" ");
+
+        cmdAlta.setText("Alta");
+
+        cmdEliminar.setText("Eliminar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -201,6 +207,12 @@ public class FrmClientes extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)))
                 .addGap(267, 267, 267))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(399, 399, 399)
+                .addComponent(cmdAlta)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cmdEliminar)
+                .addGap(114, 114, 114))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,7 +268,11 @@ public class FrmClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNumCuotas)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(198, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cmdAlta)
+                    .addComponent(cmdEliminar))
+                .addGap(76, 76, 76))
         );
 
         pack();
@@ -298,6 +314,8 @@ public class FrmClientes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton cmdAlta;
+    public javax.swing.JButton cmdEliminar;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -324,17 +342,17 @@ public class FrmClientes extends javax.swing.JFrame {
     public javax.swing.JTextField txtCedula;
     public javax.swing.JTextField txtCiudad;
     public javax.swing.JTextField txtDepartamento;
+    public javax.swing.JTextPane txtEmail;
     public javax.swing.JTextField txtExpedicion;
+    public javax.swing.JTextPane txtFechCredit;
     public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextPane txtNumCuotas;
+    public javax.swing.JTextPane txtNumFactura;
     public javax.swing.JTextField txtProfesion;
+    public javax.swing.JTextPane txtResidencia;
     public javax.swing.JTextField txtResidencial;
-    public javax.swing.JTextPane txtemail;
-    public javax.swing.JTextPane txtfechcredit;
-    public javax.swing.JTextPane txtnumcuotas;
-    public javax.swing.JTextPane txtnumfactura;
-    public javax.swing.JTextPane txtresidencia;
-    public javax.swing.JTextPane txttipocartera;
-    public javax.swing.JTextPane txttrabajo;
-    public javax.swing.JTextPane txtvalorcredito;
+    public javax.swing.JTextPane txtTipoCartera;
+    public javax.swing.JTextPane txtTrabajo;
+    public javax.swing.JTextPane txtValorCredito;
     // End of variables declaration//GEN-END:variables
 }

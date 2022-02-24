@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prueba;
+package Vista;
 
 /**
  *
@@ -83,6 +83,8 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
         txtValorMora = new javax.swing.JTextField();
         txtValorSeguro = new javax.swing.JTextField();
         txtInteresMora = new javax.swing.JTextField();
+        cmdAlta = new javax.swing.JButton();
+        cmdEliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -234,6 +236,10 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
             }
         });
 
+        cmdAlta.setText("Alta");
+
+        cmdEliminar.setText("Eliminar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -330,6 +336,12 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                         .addComponent(telTrabajo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(telResidencia, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(33, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cmdAlta)
+                .addGap(119, 119, 119)
+                .addComponent(cmdEliminar)
+                .addGap(86, 86, 86))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -448,7 +460,11 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblAcuerdo4)
                     .addComponent(txtAcuerdoNum4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cmdAlta)
+                    .addComponent(cmdEliminar))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
 
         telResidencia.getAccessibleContext().setAccessibleName("telefonoResidencia");
@@ -546,6 +562,8 @@ public class FrmSeguimientoClientes extends javax.swing.JFrame {
     public javax.swing.JLabel acuerdo3;
     public javax.swing.JLabel ced;
     public javax.swing.JLabel ciud;
+    public javax.swing.JButton cmdAlta;
+    public javax.swing.JButton cmdEliminar;
     public javax.swing.JLabel cobro;
     public javax.swing.JLabel depa;
     public javax.swing.JLabel diasMora;
