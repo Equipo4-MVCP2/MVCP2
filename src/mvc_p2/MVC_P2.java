@@ -6,6 +6,10 @@
 package mvc_p2;
 
 import Controlador.ControladorMDB;
+import Controlador.ControladorClientes;
+import Controlador.ControladorSeguimientoClientes;
+import Vista.FrmClientes;
+import Vista.FrmSeguimientoClientes;
 import Vista.FrmUsuarios;
 import pkgModelo.MDB;
 
@@ -28,9 +32,18 @@ public class MVC_P2 {
         objController = new ControladorMDB(objVista,objModelo);
         objController.iniciar();
         objVista.setVisible(true);
-        
-        System.out.println("Ejemplo");
-        
+      
+        FrmClientes objVist=new FrmClientes();
+        ControladorClientes objControlle;
+        objControlle = new ControladorClientes(objVist,objModelo);
+        objControlle.iniciar();
+        objVist.setVisible(true);
+
+        FrmSeguimientoClientes objVis=new FrmSeguimientoClientes();
+        ControladorSeguimientoClientes objControll;
+        objControll = new ControladorSeguimientoClientes(objVis,objModelo);
+        objControll.iniciar();
+        objVis.setVisible(true);
         
     }
     
